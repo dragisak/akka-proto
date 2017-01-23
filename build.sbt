@@ -10,13 +10,13 @@ PB.targets in Compile := Seq(
 
 val akkaVersion = "2.4.16"
 
-// If you need scalapb/scalapb.proto or anything from
-// google/protobuf/*.proto
 libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-remote" % akkaVersion,
   "com.typesafe.akka" %% "akka-slf4j" % akkaVersion,
   "ch.qos.logback" % "logback-classic" % "1.1.9",
-  "com.trueaccord.scalapb" %% "scalapb-runtime" % com.trueaccord.scalapb.compiler.Version.scalapbVersion % "protobuf",
+  // If you need scalapb/scalapb.proto or anything from
+  // google/protobuf/*.proto
+  // "com.trueaccord.scalapb" %% "scalapb-runtime" % com.trueaccord.scalapb.compiler.Version.scalapbVersion % "protobuf",
   "com.typesafe.akka" %% "akka-testkit" % akkaVersion % Test,
   "org.scalatest" %% "scalatest" % "3.0.1" % Test
 
