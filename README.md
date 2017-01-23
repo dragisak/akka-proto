@@ -1,1 +1,1 @@
-# Example of Akka and Protocl Buffers
+# Example of Akka and Protocol Buffers
